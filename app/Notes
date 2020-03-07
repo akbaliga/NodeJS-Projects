@@ -1,0 +1,22 @@
+Patch - bug fixes
+Minor - new features and enhancements with no breaking changes
+Major - new features with breaking changes
+
+npm install -E -D ( -E exact version, -D devDependencies)
+
+There are dependencies that are actually used to run the application ( dependencies in package.json -- for eg: lodash)
+There are other dependencies that are not part of the app but are more for development tooling ( devDependencies in package.json for eg: eslint)
+So when we run npm install --production, it only installs dependencies
+
+Use a class when you have a set of functions that you want to easily share with many objects.
+eric@t4d.io -- Eric Greene
+
+
+to remove a global install:  npm uninstall -g create-react-app 
+
+look at all global npm packages installed: npm ls -g --depth 0
+
+which create-react-app -- shows where the command is installed on the local machine
+
+
+use npm-trends to look for package options for some functionality

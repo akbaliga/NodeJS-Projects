@@ -1,0 +1,39 @@
+
+GET http://localhost:4200/api/colors HTTP/1.1
+
+###
+
+GET http://localhost:4200/api/colors/4 HTTP/1.1
+
+###
+
+POST http://localhost:4200/api/colors HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "yellow"
+}
+
+
+###
+DELETE http://localhost:4200/api/colors/2 HTTP/1.1
+
+###
+PUT http://localhost:4200/api/colors/3 HTTP/1.1
+Content-Type: application/json
+
+{
+    "id": 3,
+    "name": "brown"
+}
+
+
+###
+POST http://localhost:4200/api/addColor HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "neon"
+}
+
+###

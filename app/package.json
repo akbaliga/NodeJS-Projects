@@ -1,0 +1,43 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "debug": "node --inspect-brk index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "6.8.0",
+    "nodemon": "2.0.2"
+  },
+  "dependencies": {
+    "dotenv": "8.2.0"
+  },
+  "eslintConfig": {
+    "extends": "eslint:recommended",
+    "parserOptions": {
+      "ecmaVersion": 2019
+    },
+    "env": {
+      "node": true,
+      "es2020": true
+    },
+    "rules": {
+      "semi": [
+        "error",
+        "always"
+      ],
+      "max-len": [
+        "error",
+        {
+          "code": 80,
+          "tabWidth": 2
+        }
+      ]
+    }
+  }
+}

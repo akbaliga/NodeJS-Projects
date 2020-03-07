@@ -1,0 +1,47 @@
+
+GET http://localhost:4200/api/cars HTTP/1.1
+
+###
+
+GET http://localhost:4200/api/cars/4 HTTP/1.1
+
+###
+
+POST http://localhost:4200/api/cars HTTP/1.1
+Content-Type: application/json
+
+{
+    "make": "BMW",
+    "model": "M3",
+    "year": "2019",
+    "color": "blue",
+    "price": 60500
+}
+
+
+###
+DELETE http://localhost:4200/api/cars/2 HTTP/1.1
+
+###
+PUT http://localhost:4200/api/cars/3 HTTP/1.1
+Content-Type: application/json
+
+{
+    "make": "Acura",
+    "model": "RDX",
+    "year": "2019",
+    "color": "Red",
+    "price": 60500,
+    "id": 3
+}
+
+
+###
+POST http://localhost:4200/api/addColor HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "neon"
+}
+
+###
